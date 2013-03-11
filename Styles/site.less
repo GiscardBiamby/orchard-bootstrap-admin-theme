@@ -19,7 +19,7 @@ New Links: #3a822e;
 /* Reset
 ***************************************************************/
 
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -36,7 +36,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, button, submit {
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
-}
+}*/
 
 /* Remember focus styles! */
 :focus { outline: 0; }
@@ -681,40 +681,19 @@ button.remove:focus::-moz-focus-inner, .remove.button:focus::-moz-focus-inner {
          border-radius: 2px;	
 }
 button, .button, a.button {
-    background:#6a7b42;
-    border:1px solid #487328;
     color:#fff;
     cursor: pointer;
-    display: inline-block;
-    font: 12px Arial,Helvetica,sans-serif;
     padding: 5px 14px 5px 14px;
     
     /*position: relative;*/
     text-align: center;
     text-decoration: none;
     
-    /*----CSS3 properties----*/
-     text-shadow: rgba(40,53,9,.2) 0px 0px 1px;
-    -webkit-box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.2); 
-    -moz-box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.2); 
-     box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.2);
-
-     
-    /*----In ie the first couplet sets the alpha value so 00=transparent and ff=opaque)----*/    
-     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ff9bb36c',  endColorstr='#ff809f43');	
-	 background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(155, 179, 108, 1.0)), to(rgba(128, 159, 67, 1.0)));    
-     background: -moz-linear-gradient(top, rgba(155, 179, 108, 1.0), rgba(128, 159, 67, 1.0));
-
-     /*test - base green in pallet is 155,179,108*/
-     background: -moz-linear-gradient(top, rgba(155, 179, 108, 1.0), rgba(133, 154, 93, 1.0));
-        
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-     border-radius: 2px;
+    border-radius: 2px;
+    
 }
 
-.button, a.button /* For link buttons */
-{
+.button, a.button /* For link buttons */ {
    padding: 5px 14px 5px 14px; 
 }
 
@@ -723,28 +702,12 @@ button, input.button, x:-moz-any-link {
     }
 
 button:hover, .button:hover, a.button:hover {
-    border-color:#3a822e;
-    color:#eefcec;
-    text-decoration:none; 
-    background: #809f43;
-    
-    /*CSS3 properties*/  
-     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ff6e7f45',  endColorstr='#ff6a7b42');
-     background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(110, 127, 69, 1.0)), to(rgba(106, 123, 66, 1.0)));    
-     background: -moz-linear-gradient(top, rgba(110, 127, 69, 1.0), rgba(106, 123, 66, 1.0));
+    text-decoration:none;
+    color:#fff; 
 }
 
 button:active, .buton:active, a.button:active {
     text-decoration:none; 
-    background:#6a7b42;
-    border:1px solid #487328;
-    color:#fff;
-
-    /*CSS3 properties*/
-    text-shadow: rgba(0,0,0,.5) 0px 0px 1px;
-     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ff9bb36c',  endColorstr='#ff809f43');	
-	 background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(155, 179, 108, 1.0)), to(rgba(128, 159, 67, 1.0)));   
-     background: -moz-linear-gradient(top, rgba(155, 179, 108, 1.0), rgba(128, 159, 67, 1.0));
 }
 button:focus::-moz-focus-inner, .button:focus::-moz-focus-inner {
   border: 1px dotted transparent;
@@ -1064,7 +1027,7 @@ html.dyn #submit-pager, html.dyn .apply-bulk-actions-auto { display:none; }
 }
 /* Settings and Import/Export */
 .orchard-media fieldset div, .settings fieldset div, .settings .button, .orchard-importexport fieldset div {
-    margin:.5em 0;
+    margin: 1.2em 0;
 }
 .settings legend {
     margin:0 0 0 0;

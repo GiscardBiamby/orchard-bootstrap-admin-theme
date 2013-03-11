@@ -4220,6 +4220,130 @@ fieldset[disabled] a.button:active {
   background-color: #428bca;
   border-color: #428bca;
 }
-fieldset {
+fieldset,
+fieldset div {
   margin: 0 0 25px 0;
+}
+button,
+a.button {
+  border: 0;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #a7a9aa;
+  border-radius: 4px;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
+}
+button:focus,
+a.button:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+button:hover,
+a.button:hover,
+button:focus,
+a.button:focus {
+  color: #fff;
+  text-decoration: none;
+}
+button:active,
+a.button:active,
+button.active,
+a.button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+button.disabled,
+a.button.disabled,
+button[disabled],
+a.button[disabled],
+fieldset[disabled] button,
+fieldset[disabled] a.button {
+  cursor: default;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+button:hover,
+a.button:hover,
+button:focus,
+a.button:focus,
+button:active,
+a.button:active {
+  background-color: #9a9c9d;
+  border-color: #8d9091;
+}
+button.disabled:hover,
+a.button.disabled:hover,
+button[disabled]:hover,
+a.button[disabled]:hover,
+fieldset[disabled] button:hover,
+fieldset[disabled] a.button:hover,
+button.disabled:focus,
+a.button.disabled:focus,
+button[disabled]:focus,
+a.button[disabled]:focus,
+fieldset[disabled] button:focus,
+fieldset[disabled] a.button:focus,
+button.disabled:active,
+a.button.disabled:active,
+button[disabled]:active,
+a.button[disabled]:active,
+fieldset[disabled] button:active,
+fieldset[disabled] a.button:active {
+  background-color: #a7a9aa;
+  border-color: #a7a9aa;
+}
+button .badge,
+a.button .badge {
+  position: relative;
+  top: -1px;
+}
+button.primaryAction,
+a.button.primaryAction {
+  background-color: #428bca;
+  border-color: #428bca;
+}
+button.primaryAction:hover,
+a.button.primaryAction:hover,
+button.primaryAction:focus,
+a.button.primaryAction:focus,
+button.primaryAction:active,
+a.button.primaryAction:active {
+  background-color: #357ebd;
+  border-color: #3071a9;
+}
+button.primaryAction.disabled:hover,
+a.button.primaryAction.disabled:hover,
+button.primaryAction[disabled]:hover,
+a.button.primaryAction[disabled]:hover,
+fieldset[disabled] button.primaryAction:hover,
+fieldset[disabled] a.button.primaryAction:hover,
+button.primaryAction.disabled:focus,
+a.button.primaryAction.disabled:focus,
+button.primaryAction[disabled]:focus,
+a.button.primaryAction[disabled]:focus,
+fieldset[disabled] button.primaryAction:focus,
+fieldset[disabled] a.button.primaryAction:focus,
+button.primaryAction.disabled:active,
+a.button.primaryAction.disabled:active,
+button.primaryAction[disabled]:active,
+a.button.primaryAction[disabled]:active,
+fieldset[disabled] button.primaryAction:active,
+fieldset[disabled] a.button.primaryAction:active {
+  background-color: #428bca;
+  border-color: #428bca;
 }
