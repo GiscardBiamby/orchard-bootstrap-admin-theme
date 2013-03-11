@@ -1,0 +1,96 @@
+/*!
+ * Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+
+// Core variables and mixins
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/variables.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/mixins.less";
+
+// Reset
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/normalize.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/print.less";
+
+// Core CSS
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/scaffolding.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/type.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/code.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/grid.less";
+
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/tables.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/forms.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/buttons.less";
+
+// Components: common
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/component-animations.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/glyphicons.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/dropdowns.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/wells.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/close.less";
+
+// Components: Nav
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/navs.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/navbar.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/button-groups.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/breadcrumbs.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/pagination.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/pager.less";
+
+// Components: Popovers
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/modals.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/tooltip.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/popovers.less";
+
+// Components: Misc
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/alerts.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/thumbnails.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/media.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/labels.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/badges.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/progress-bars.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/accordion.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/carousel.less";
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/jumbotron.less";
+
+// Utility classes
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/utilities.less"; // Has to be last to override when necessary
+@import "../../../Modules/Orchard-Bootstrap-Module/Styles/bootstrap/less/responsive-utilities.less";
+
+h2 {
+    font-size: @font-size-large;
+}
+h3 {
+    font-size: @font-size-medium;
+}
+h4, h5 {
+    font-size: @font-size-base;
+}
+
+.widgets-placement, .widgets-none {
+    h1, h2, h3, h4, h5 {
+        line-height: @font-size-large;
+    }
+}
+.widgets-listed ol {
+    margin-left:inherit;
+}
+
+
+.bulk-actions, .bulk-actions-auto {
+    input, select, textarea {
+        width:auto;
+    }
+}
+button, .button, a.button {
+    .btn-primary;
+}
+
+
+fieldset {
+    margin: 0 0 25px 0;
+}
