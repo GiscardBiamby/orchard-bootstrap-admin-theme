@@ -19,34 +19,15 @@ New Links: #3a822e;
 /* Reset
 ***************************************************************/
 
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, button, submit { 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
-}*/
-
 /* Remember focus styles! */
 :focus { outline: 0; }
 
-body { line-height: 1; color: black; background: white; }
+/*body { line-height: 1; color: black; background: white; }*/
 ol, ul { list-style: none; }
 
 /* Tables still need 'cellspacing="0"' in the markup */
-table { border-collapse: separate; border-spacing: 0; }
-caption, th, td { text-align: left; font-weight: normal; }
+/*table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }*/
 
 blockquote:before, blockquote:after,
 q:before, q:after { content: ""; }
@@ -775,45 +756,7 @@ button.link {
 
 /* (Items) Tables
 ***************************************************************/
-table.items {
-    margin:0 0 1.4em 0;
-    background:#fff;
-    border:1px solid #eaeaea;
-    border-bottom:none;
-    border-collapse:separate;
-    border-spacing:0;
-    width:100%;
-}
-table.items caption {
-    padding:8px 0;
-    text-indent:0;
-}
-table.items col {
-    border-spacing:0;
-    display:table-column;
-}
-table.items colgroup 
-{
-    border-spacing:0;
-    display:table-column-group;
-}
-table.items tbody {
-    border-spacing:0;
-    vertical-align:middle;
-}
-table.items thead, table.items th {
-    background:#f5f5f5;
-    overflow:hidden;
-    text-align:left;
-    white-space:nowrap;
-}
-table.items th.actions {
-    width:300px;
-    text-align:right;
-}
-table.items th.checkbox {
-    width:50px;
-}
+
 
 /* todo: (heskew) hook back up */
 table.items tr.hover {
@@ -821,12 +764,6 @@ table.items tr.hover {
 }
 table.items tr.critical {background:#e68585; border:inherit;}
 table.items tr.warning {background:#fdf5bc; border:inherit;}
-table.items th, table.items td {
-    border-bottom:1px solid #eaeaea;
-    border-spacing:0px;
-    display:table-cell;
-    padding:8px 12px;
-}
 
 table.items td .add 
 {
@@ -868,14 +805,15 @@ table.items td .add
     margin-left:8px;
     margin-right:0;
 }
-#main .contentItems li:hover .ibutton { background-position:0 0; }
-#main .contentItems li:hover .ibutton.remove { background-position:-20px 0; }
-#main .contentItems li:hover .ibutton.view { background-position:-40px 0; }
-#main .contentItems li:hover .ibutton.add.page { background-position:-60px 0; }
-#main .contentItems li:hover .ibutton.edit { background-position:-80px 0; }
-#main .contentItems li:hover .ibutton.publish { background-position:-100px 0; }
-#main .contentItems li:hover .ibutton.blog { background-position:-120px 0; }
-
+#main .contentItems li:hover .ibutton { 
+    background-position:0 0; 
+    &.remove { background-position:-20px 0; }
+    &.view { background-position:-40px 0; }
+    &.add.page { background-position:-60px 0; }
+    &.edit { background-position:-80px 0; }
+    &.publish { background-position:-100px 0; }
+    &.blog { background-position:-120px 0; }
+}
 .contentItems .summary {
     clear:both;
     padding:1.2em .4em .5em;

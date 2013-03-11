@@ -4347,3 +4347,31 @@ fieldset[disabled] a.button.primaryAction:active {
   background-color: #428bca;
   border-color: #428bca;
 }
+table.items {
+  width: 100%;
+  margin-bottom: 20px;
+}
+table.items th,
+table.items td {
+  padding: 8px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+table.items thead th {
+  vertical-align: bottom;
+}
+table.items caption + thead tr:first-child th,
+table.items caption + thead tr:first-child td,
+table.items colgroup + thead tr:first-child th,
+table.items colgroup + thead tr:first-child td,
+table.items thead:first-child tr:first-child th,
+table.items thead:first-child tr:first-child td {
+  border-top: 0;
+}
+table.items tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+table.items .table {
+  background-color: #ffffff;
+}
