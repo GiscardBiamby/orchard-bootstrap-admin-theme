@@ -985,7 +985,7 @@ table.items td .add {
   display: inline;
 }
 .contentItems.bulk-items .metadata,
-.contentItems.bulk-items .primary {
+.contentItems .contentItems.bulk-items .primary {
   margin: .7em 0 .7em 2em;
   overflow: auto;
 }
