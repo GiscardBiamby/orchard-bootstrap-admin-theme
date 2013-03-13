@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bundle minify="true" runOnBuild="true">
+<bundle minify="true" runOnBuild="false">
   <!--The order of the <file> elements determines the order of them when bundled.-->
   <file>../../../Modules/Orchard-Bootstrap-Module/Scripts/bootstrap/plugins/bootstrap-transition.js</file>
   <file>../../../Modules/Orchard-Bootstrap-Module/Scripts/bootstrap/plugins/bootstrap-alert.js</file>
